@@ -1,0 +1,22 @@
+/* Checkbox */
+[data-task=x] input[type=checkbox]:checked, [data-task=x][type=checkbox]:checked {
+  --checkbox-color: green;
+  --checkbox-color-hover:green ;
+}
+[data-task="-"] input[type=checkbox]:checked, [data-task="-"][type=checkbox]:checked {
+  --checkbox-color: red !important;
+  --checkbox-color-hover: red !important;
+}
+[data-task="-"] input[type=checkbox]:checked:after, [data-task="-"][type=checkbox]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%2Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 49%;
+}
+[data-task="-"] input[type=checkbox]:checked:before, [data-task="-"][type=checkbox]:checked:before {
+  color: var(--checkbox-color);
+  margin: -1 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 0);
+  font-weight: bold;
+}
+
+

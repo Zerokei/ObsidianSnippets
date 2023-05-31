@@ -1,0 +1,109 @@
+/* Digital Garden：引入字体 */
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=JetBrains+Mono&family=Red+Hat+Mono&display=swap');
+
+.theme-light {
+  /* 强调色 */
+  --accent-h: 31;
+  --accent-s: 95%;
+  --accent-l: 60%;
+  /* 背景色 */
+  --background-primary: #ffffff;
+  --background-secondary: #ffffff;
+  --background-secondary-alt: #ffffff;
+  --text-normal: #000000;
+}
+
+.theme-dark {
+  /* 强调色 */
+  --accent-h: 190;
+  --accent-s: 95%;
+  --accent-l: 60%;
+}
+
+/* 全局变量设置 */
+body {
+  --radius-s: 4px;
+  /* 标题 */
+  --h1-size: 2.00em;
+  --h2-size: 1.50em;
+  --h3-size: 1.25em;
+  --h4-size: 1.00em;
+  /* 列表 */
+  --list-indent: 2em; /* 列表缩进 */
+  --list-spacing: 0.1em; /* 列表间距 */
+  /* 字体设置 */
+  --font-text: 'JetBrains Mono', '霞鹜文楷 屏幕阅读版';
+  --font-monospace: 'IntelOne mono', 'JetBrains Mono', '霞鹜文楷 屏幕阅读版';
+  /* Callout */
+  --callout-title-padding: var(--size-4-2);
+}
+
+/* 圆角设置 */
+.search-result-file-match {
+  border-radius: --radius-s;
+}
+
+/* Digital Garden：取消代码块阴影 */
+code[class*=language-], pre[class*=language-] {
+  text-shadow: 0 0px;
+}
+
+/* 大标题后缀设置 */
+.markdown-preview-view h1::after {
+  content: "Written by Chritch :) ";
+  display: block;
+  font-size: 50%;
+  color: #999;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+/* 设置 h2 标题间距 */
+.markdown-preview-view h2 {
+  margin-top: 5%;
+}
+
+/* 独立图片居中，限制高度 */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 400px;
+}
+
+/* 文本、列表混排适配 */
+/* 缩小段落与列表之间的间距 */
+p {
+  margin-block-end: 0em;
+}
+ul, ol {
+  margin-block-start: 0em;
+}
+
+/* 列表图片左对齐，限制高度 */
+li img {
+  margin-left: 0%;
+  max-height: 200px;
+  /* width: 50%; */
+}
+
+/* 表格居中 */
+.markdown-preview-view table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 内链取消下划线 */
+.markdown-source-view.mod-cm6 .cm-underline { 
+  text-decoration: none; 
+} 
+.markdown-rendered .internal-link {
+  /* 取消链接下划线 */
+  text-decoration: none; 
+}
+
+/* Mathjax 修复 */
+mjx-stretchy-h > mjx-ext {
+  font-weight: 600
+}
