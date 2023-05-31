@@ -2,7 +2,7 @@
 
 Apply to the default obsidian theme.
 
-## Quick Start
+## Getting Started
 
 .obsidian/.snippets/ZeroSnippets.css
 
