@@ -29,3 +29,30 @@ code[class*=language-], pre[class*=language-] {
 .search-button {
     min-width: 190px;
 }
+
+/* 标题自动标号 */
+h1 {
+  counter-reset: h2;
+}
+h2 {
+  counter-reset: h3;
+}
+h3 {
+  counter-reset: h4;
+}
+
+h2:before {
+  counter-increment: h2;
+  content: counter(h2);
+  margin-right: 0.8rem;
+}
+h3:before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3);
+  margin-right: 0.8rem;
+}
+h4:before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4);
+  margin-right: 0.8rem;
+}
