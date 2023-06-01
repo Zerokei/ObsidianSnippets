@@ -1,6 +1,3 @@
-/* Digital Garden：引入字体 */
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=JetBrains+Mono&family=Red+Hat+Mono&display=swap');
 
 .theme-light {
   /* 强调色 */
@@ -42,21 +39,6 @@ body {
 /* 圆角设置 */
 .search-result-file-match {
   border-radius: --radius-s;
-}
-
-/* Digital Garden：取消代码块阴影 */
-code[class*=language-], pre[class*=language-] {
-  text-shadow: 0 0px;
-}
-
-/* 大标题后缀设置 */
-.markdown-preview-view h1::after {
-  content: "Written by Chritch :) ";
-  display: block;
-  font-size: 50%;
-  color: #999;
-  margin-top: 2%;
-  margin-bottom: 4%;
 }
 
 /* 设置 h2 标题间距 */

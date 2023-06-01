@@ -12,9 +12,11 @@ Apply to the default obsidian theme.
 @import url("https://zerokei.github.io/ObsidianSnippets/checkbox.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/mermaid.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/yaml.css");
+@import url("https://zerokei.github.io/ObsidianSnippets/digital-garden.css");
+@import url("https://zerokei.github.io/ObsidianSnippets/license.css");
 ```
 
-## Fonts
+## More 
 
 - [Jetbrains mono](https://github.com/JetBrains/JetBrainsMono)
 - [IntelOne mono](https://github.com/intel/intel-one-mono)
