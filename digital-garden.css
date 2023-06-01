@@ -25,6 +25,12 @@ code[class*=language-], pre[class*=language-] {
     font-family: var(--font-chinese);
 }
 
+/* 顶栏设置 */
+/* 顶栏标题修改 */
+.navbar {
+    font-family: var(--font-chinese);
+}
+
 /* 搜索框设置 */
 .search-button {
     min-width: 190px;
