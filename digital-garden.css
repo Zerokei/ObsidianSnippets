@@ -13,9 +13,19 @@ code[class*=language-], pre[class*=language-] {
   text-shadow: 0 0px;
 }
 
-/* 侧栏标题大小 */
+/* 侧栏设置 */
+/* 侧栏宽度修改 */
+.filetree-sidebar {
+    width: 270px;
+}
+/* 侧栏标题修改 */
 .filetree-sidebar h1 {
     /* !TODO: important 是坏文明 */
     font-size: 20px !important; 
     font-family: var(--font-chinese);
+}
+
+/* 搜索框设置 */
+.search-button {
+    min-width: 190px;
 }
