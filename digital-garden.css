@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=JetBrains+Mono&family=Red+Hat+Mono&display=swap');
 
 body {
-    --font-chinese: 'LWGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
+    --font-chinese: 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
 }
 
 /* 取消代码块阴影 */
