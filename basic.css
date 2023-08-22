@@ -89,3 +89,8 @@ li img {
 mjx-stretchy-h > mjx-ext {
   font-weight: 600
 }
+
+/* tab 栏宽度设置 */
+body {
+  --tab-stacked-pane-width: 100%;
+}
