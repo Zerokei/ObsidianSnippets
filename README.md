@@ -16,8 +16,15 @@ Apply to the default obsidian theme.
 @import url("https://zerokei.github.io/ObsidianSnippets/license.css");
 ```
 
-## More 
+## Fonts
 
+### Present
+
+- Default font
+    - [LXGW Bright](https://github.com/lxgw/LxgwBright)
+- Monospace font
+    - [IntelOne mono](https://github.com/intel/intel-one-mono)
+
+### Previous
 - [Jetbrains mono](https://github.com/JetBrains/JetBrainsMono)
-- [IntelOne mono](https://github.com/intel/intel-one-mono)
 - [霞鹜文楷 屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen)
