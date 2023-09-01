@@ -31,7 +31,7 @@ body {
   --list-spacing: 0.1em; /* 列表间距 */
   /* 字体设置 */
   --font-text: 'LXGW Bright', 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
-  --font-monospace: 'IntelOne mono', 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
+  --font-monospace: 'Intel One Mono', 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
   /* Callout */
   --callout-title-padding: var(--size-4-2);
 }
