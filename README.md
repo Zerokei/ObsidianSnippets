@@ -4,9 +4,9 @@ Apply to the default obsidian theme.
 
 ## Getting Started
 
-.obsidian/.snippets/ZeroSnippets.css
 
 ```css
+# .obsidian/snippets/ZeroSnippets.css
 @import url("https://zerokei.github.io/ObsidianSnippets/basic.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/callout.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/checkbox.css");
@@ -15,6 +15,8 @@ Apply to the default obsidian theme.
 @import url("https://zerokei.github.io/ObsidianSnippets/digital-garden.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/ui.css");
 ```
+
+Open Obsidian > Settings > Appearance > CSS Snippets and enable it.
 
 ## Fonts
 
