@@ -13,7 +13,7 @@ Apply to the default obsidian theme.
 @import url("https://zerokei.github.io/ObsidianSnippets/mermaid.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/yaml.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/digital-garden.css");
-@import url("https://zerokei.github.io/ObsidianSnippets/license.css");
+@import url("https://zerokei.github.io/ObsidianSnippets/ui.css");
 ```
 
 ## Fonts
@@ -28,3 +28,7 @@ Apply to the default obsidian theme.
 ### Previous
 - [Jetbrains mono](https://github.com/JetBrains/JetBrainsMono)
 - [霞鹜文楷 屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen)
+
+## Credits
+
+- [Obsidian-Serenity](https://github.com/Bluemoondragon07/Obsidian-Serenity)
