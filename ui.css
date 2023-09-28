@@ -1,0 +1,110 @@
+/* hide ribbon */
+body:not(:not(.hide-ribbon)):not(.opacity-hide) .workspace-ribbon:not(:hover) {
+    width: 0px;
+    max-width: 0px;
+    min-width: 0px;
+    padding: 0.5px;
+    margin-right: 0px;
+} 
+body:not(:not(.hide-ribbon)) .workspace-ribbon:not(:hover) {
+    opacity: 0;
+} 
+body:not(.hide-ribbon):not(.hide-tabs) .workspace-ribbon.is-collapsed,
+body:not(.hide-ribbon):not(:not(.flat-mode)) .workspace-ribbon:not(.is-collapsed) {
+    border-right: var(--divider-width) solid var(--divider-color) !important;
+}
+body:not(.hide-ribbon):not(:not(.flat-mode)):not(.hide-file-tabs) .workspace-ribbon:not(.is-collapsed):before {
+    border-right: var(--divider-width) solid var(--divider-color);
+}
+
+.workspace-ribbon {
+    border: none;
+    transition: 0.25s all !important;
+}
+
+/* sidebar toggle button */
+body:not(:not(.flat-mode)) .workspace-ribbon.mod-left:before {
+    border-bottom: 2px var(--background-primary) solid !important;
+    background-color: var(--background-primary) !important;
+}
+body:not(.flat-mode) .workspace-ribbon.mod-left:hover:before,
+body:not(.flat-mode) .workspace-ribbon.mod-left:hover:before:hover,
+body:not(.flat-mode) .workspace-ribbon.mod-left:not(.is-collapsed):before {
+border-bottom: 2px var(--background-secondary) solid ;
+}
+/* remove bottom border when tabs are hidden */
+.hide-tabs .workspace-ribbon.mod-left.is-collapsed:before {
+    border-bottom: 2px solid var(--background-primary) !important;
+}
+.hide-file-tabs .workspace-ribbon.mod-left:before {
+    background-color: var(--background-primary) !important;
+}
+body:not(:not(.flat-mode)) .workspace-ribbon:not(.is-collapsed).mod-left:before {
+    border-bottom: 2px var(--background-primary) solid !important;
+    background-color: var(--background-primary) !important;
+}
+
+/* change ribbon color and border when tabs are hovered */
+
+
+
+/* hide tabs above notes */
+body:not(.is-mobile):not(:not(.hide-tabs)):not(.opacity-hide) .workspace-split.mod-vertical.mod-root .workspace-tab-header-container:not(:hover) {
+    height: 1em;
+    width: 100%;
+    margin-bottom: 0em;
+}
+body:not(.is-mobile):not(:not(.hide-tabs)) .workspace-split.mod-vertical.mod-root .workspace-tab-header-container:not(:hover) {
+    opacity: 0;
+}
+
+/* transition animation */
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container {
+    transition: all 0.25s !important;
+}
+
+/* tab title */
+.workspace-tab-header-inner-title {
+   font-size: var(--font-ui-smaller);
+}
+
+
+/* file explorer tabs */
+body:not(:not(.flat-mode)) .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container {
+    border-left: 0.5px solid var(--background-modifier-border);
+    border-bottom-left-radius: var(--tab-curve);
+    margin-left: 2em;
+}
+/* alternate look when not in flat color mode */
+body:not(.flat-mode) .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner {
+    margin-left: 2em;
+}
+body:not(.hide-file-tabs):not(.flat-mode) .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container {
+    background-color: var(--titlebar-background-focused) !important;
+}
+/* color when not in flat color mode and workspace tabs are hidden */
+.hide-tabs:not(.flat-mode) .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container {
+    --titlebar-background-focused: var(--background-primary) !important;
+}
+/* also affect the button before it */ .hide-tabs:not(.flat-mode) .workspace-ribbon.side-dock-ribbon.mod-left::before {
+border-bottom: 1px solid var(--background-secondary);
+}
+
+
+/* @settings
+name: UI 
+id: zero-theme
+settings:
+ 
+  -
+      id: hide-ribbon
+      title: Hide Sidebar Ribbon
+      type: class-toggle
+      default: true
+  -
+      id: hide-tabs
+      title: Hide Workspace Tabs
+      type: class-toggle
+      default: true
+*/
+
