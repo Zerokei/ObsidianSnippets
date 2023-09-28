@@ -68,3 +68,12 @@ body .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-contai
 /* also affect the button before it */ .workspace-ribbon.side-dock-ribbon.mod-left::before {
 border-bottom: 1px solid var(--background-secondary);
 }
+
+
+/* hide status bar and clickable icon*/
+
+button.clickable-icon, 
+a.clickable-icon,
+div.status-bar {
+  visibility:hidden;
+}
