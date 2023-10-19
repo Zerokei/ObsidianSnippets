@@ -4,6 +4,11 @@ body .workspace-tab-header-container {
     padding-left: 80px !important;
     --tab-outline-width: 0px !important;
     background-color: var(--background-primary);
+    justify-content:center !important;
+}
+.workspace .mod-root .workspace-tab-header-spacer {
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
 }
 body .mod-root .workspace-tab-header-container-inner {
     margin-top: 4px;
