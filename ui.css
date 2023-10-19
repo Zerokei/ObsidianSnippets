@@ -4,6 +4,7 @@ body .workspace-tab-header-container {
     padding-left: 80px !important;
     --tab-outline-width: 0px !important;
     background-color: var(--background-primary);
+    display: flex !important;
     justify-content:center !important;
 }
 .workspace .mod-root .workspace-tab-header-spacer {
@@ -61,10 +62,10 @@ div.workspace-tab-header-inner-close-button {
 body .workspace-ribbon {
     opacity: 0;
 } 
-.workspace-ribbon.mod-left.is-collapsed {
-    display: none;
+.workspace-ribbon.mod-left {
+    display: none !important;
     width: 0px !important;
-    border: none;
+    border: none !important;
     transition: 0.25s all !important;
 }
 
@@ -94,7 +95,7 @@ div .metadata-properties-heading {
 div .metadata-add-button .text-icon-button {
     margin-top: 0em !important;
 }
-body .metadata-container.is-collapsed {
+body .metadata-container {
     margin-bottom: 0px !important;
 }
 body div .metadata-container {
