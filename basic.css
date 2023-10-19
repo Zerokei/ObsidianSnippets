@@ -31,7 +31,7 @@ body {
   --list-spacing: 0.1em; /* 列表间距 */
   /* 字体设置 */
   --font-text: 'LXGW Bright', 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
-  --font-monospace: 'Intel One Mono', 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
+  --font-monospace: 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
   /* Callout */
   --callout-title-padding: var(--size-4-2);
 }
@@ -96,6 +96,18 @@ li img {
 /* Mathjax 修复 */
 mjx-stretchy-h > mjx-ext {
   font-weight: 600
+}
+
+/* code 设置 */
+
+.markdown-rendered p code,
+.markdown-rendered ul code {
+  color: var(--color-accent-2);
+  font-weight: 400;
+}
+
+code {
+  font-weight: 300;
 }
 
 /* tab 栏宽度设置 */
