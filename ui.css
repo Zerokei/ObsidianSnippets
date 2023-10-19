@@ -1,18 +1,30 @@
 
 /* 定制标签栏 */
-body .workspace-tab-header-container {
+
+body:not(.is-fullscreen) :not(.mod-stacked) div.workspace-tabs.mod-top .workspace-tab-header-container {
     padding-left: 80px !important;
+}
+body :not(.mod-stacked).workspace-tab-header-container {
     --tab-outline-width: 0px !important;
     background-color: var(--background-primary);
     display: flex !important;
     justify-content:center !important;
+    padding-right: 0px !important;
 }
+body div.workspace-tabs.mod-stacked .workspace-tab-header-container {
+    background-color: var(--background-primary) !important;
+    border-bottom: 1px solid var(--color-base-30) !important;
+}
+body div.workspace-tabs.mod-stacked .workspace-tab-header-container {
+    display: none !important;
+}
+
 .workspace .mod-root .workspace-tab-header-spacer {
     flex-shrink: 0 !important;
     flex-grow: 0 !important;
 }
 body .mod-root .workspace-tab-header-container-inner {
-    margin-top: 4px;
+    margin-top: 6px;
     padding-bottom: 3px;
 }
 body .mod-root .workspace-tab-header {
@@ -58,7 +70,7 @@ div.workspace-tab-header-inner-close-button {
 }
 
 
-/* 隐藏侧边栏 */
+/* 隐藏侧边窗 */
 body .workspace-ribbon {
     opacity: 0;
 } 
@@ -67,6 +79,11 @@ body .workspace-ribbon {
     width: 0px !important;
     border: none !important;
     transition: 0.25s all !important;
+}
+
+/* 定制侧边栏 */
+.workspace-tabs .workspace-leaf {
+    background-color: var(--background-primary);
 }
 
 
