@@ -15,8 +15,11 @@ body div.workspace-tabs.mod-stacked .workspace-tab-header-container {
     background-color: var(--background-primary) !important;
     border-bottom: 1px solid var(--color-base-30) !important;
 }
-body div.workspace-tabs.mod-stacked .workspace-tab-header-container {
+body .is-left-sidedock-open div.workspace-tabs.mod-stacked .workspace-tab-header-container {
     display: none !important;
+}
+body :not(.is-left-sidedock-open) div.workspace-tabs.mod-stacked .workspace-tab-header-container {
+    display: flex !important;
 }
 
 .workspace .mod-root .workspace-tab-header-spacer {
