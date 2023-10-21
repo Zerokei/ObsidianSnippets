@@ -82,6 +82,8 @@ li img {
 .markdown-preview-view table {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /*** 链接样式 ***/
