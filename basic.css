@@ -169,6 +169,7 @@ mjx-stretchy-h > mjx-ext {
   font-weight: 400;
 }
 
+span.cm-hmd-codeblock,
 code {
   font-weight: 300;
 }
