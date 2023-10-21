@@ -156,16 +156,15 @@ a.external-link[data-tooltip-position] {
 }
 
 
-
 /* Mathjax 修复 */
 mjx-stretchy-h > mjx-ext {
   font-weight: 600
 }
 
 /* code 设置 */
-
+.cm-s-obsidian span.cm-inline-code,
 .markdown-rendered p code,
-.markdown-rendered ul code {
+.markdown-rendered :is(ul,ol) code {
   color: var(--color-accent-2);
   font-weight: 400;
 }
