@@ -30,7 +30,7 @@ Open Obsidian > Settings > Appearance > CSS Snippets and enable it.
 ### Previous
 
 - [IntelOne mono](https://github.com/intel/intel-one-mono)
-- [霞鹜文楷 屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen)
+- [LXGW Wenkai Screen](https://github.com/lxgw/LxgwWenKai-Screen)
 
 ## Credits
 
