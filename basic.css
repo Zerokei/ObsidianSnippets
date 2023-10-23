@@ -34,6 +34,7 @@ body {
   --font-monospace: 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
   /* Callout */
   --callout-title-padding: var(--size-4-2);
+  --link-unresolved-filter: opacity(50%);
 }
 
 /* 圆角设置 */
@@ -145,8 +146,9 @@ a.external-link {
 }
 /* 修复普通外链样式 */
 a.external-link[data-tooltip-position] {
+  color: var(--color-base-70);
   font-family: var(--font-text);
-  font-weight: normal;
+  font-weight: 600 !important;
   font-size: 100% !important;
 }
 /* 取消普通外链默认图标 */

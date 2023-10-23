@@ -1,4 +1,8 @@
 
+body {
+    --tab-text-color-focused-active-current: var(--text-accent);
+}
+
 /* 定制标签栏 */
 
 body:not(.is-fullscreen) :not(.mod-stacked) div.workspace-tabs.mod-top .workspace-tab-header-container {
@@ -30,7 +34,7 @@ body .mod-root .workspace-tab-header-container-inner {
     margin-top: 6px;
     padding-bottom: 3px;
 }
-body .mod-root .workspace-tab-header {
+body .mod-root div.workspace-tabs:not(.mod-stacked) .workspace-tab-header {
     box-shadow: none !important;
     --tab-radius-active: 6px;
     box-shadow: var(--shadow-s);
@@ -55,13 +59,10 @@ body .workspace-tab-header-new-tab {
 }
 
 /* 选中标签页效果 */
-body .workspace-tab-header.is-active {
+
+body div.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
     border: 1px solid var(--text-accent);
     background-color: var(--color-base-20) !important;
-}
-div.workspace-tab-header.is-active .workspace-tab-header-inner-title {
-    color: var(--text-accent) !important;
-    font-weight: bolder !important;
 }
 
 /* 隐藏顶栏按钮和叉号 */
@@ -94,17 +95,18 @@ body .workspace-ribbon {
 button.clickable-icon, 
 a.clickable-icon,
 div.status-bar {
-  visibility:hidden;
+    visibility:hidden;
 }
 
 /* 隐藏滚动条 */
-::-webkit-scrollbar{width:5px;background-color:transparent}
-::-webkit-scrollbar-track{background-color:transparent}
-::-webkit-scrollbar-thumb{background-clip:padding-box;border:3px solid transparent;background-color:transparent;border-width:3px 4px 3px 3px;min-height:45px}
+
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* 定制界面尺寸 */
-body .cm-scroller,
-body .markdown-rendered {
+body .cm-editor .cm-scroller,
+body div.markdown-reading-view .markdown-rendered {
     padding-top: 10px !important;
 }
 
@@ -116,7 +118,7 @@ div .metadata-add-button .text-icon-button {
     margin-top: 0em !important;
 }
 body .metadata-container {
-    margin-bottom: 0px !important;
+    /* margin-bottom: 0px !; */
 }
 body div .metadata-container {
     font-size: var(--font-smaller);
