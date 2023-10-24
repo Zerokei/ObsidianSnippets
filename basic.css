@@ -146,9 +146,9 @@ a.external-link {
 }
 /* 修复普通外链样式 */
 a.external-link[data-tooltip-position] {
-  color: var(--color-base-70);
+  color: var(--color-base-100);
   font-family: var(--font-text);
-  font-weight: 600 !important;
+  font-weight: normal !important;
   font-size: 100% !important;
 }
 /* 取消普通外链默认图标 */
