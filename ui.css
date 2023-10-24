@@ -66,9 +66,10 @@ body div.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
 }
 
 /* 隐藏顶栏按钮和叉号 */
-div.clickable-icon,
-span.clickable-icon,
+div.sidebar-toggle-button.mod-left > div.clickable-icon,
+div.workspace-tab-header-tab-list > span.clickable-icon,
 div.sidebar-toggle-button.mod-right,
+div.view-actions > a.clickable-icon.view-action,
 div.workspace-tab-header-inner-close-button {
     display: none !important;
 }
@@ -92,10 +93,8 @@ body .workspace-ribbon {
 
 
 /* 隐藏下方状态栏 */
-button.clickable-icon, 
-a.clickable-icon,
 div.status-bar {
-    visibility:hidden;
+    /* visibility:hidden; */
 }
 
 /* 隐藏滚动条 */
