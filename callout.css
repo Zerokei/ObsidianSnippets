@@ -1,22 +1,21 @@
 /* Callout */
 div.HyperMD-quote,
 .callout {
-  font-size: 90%;
+  font-size: 0.9rem;
   font-family: var(--font-text);
 }
 .callout-icon svg {
   width: 105%;
-  margin-right: 3px;
+  margin-right: 2px;
+  margin-top: 2px;
 }
 div .markdown-rendered .show-indentation-guide {
   padding: 0px;
 }
-div.HyperMD-callout {
-  padding: 8px;
-}
+
 div.HyperMD-callout,
 .callout-title {
-  font-size: 105%;
+  font-size: 0.95rem;
 }
 .callout-title-inner {
   margin-top: 0.4%;
