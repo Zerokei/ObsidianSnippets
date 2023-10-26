@@ -5,7 +5,7 @@ body {
 
 /* 定制标签栏 */
 
-body:not(.is-fullscreen) :not(.mod-stacked) div.workspace-tabs.mod-top .workspace-tab-header-container {
+body:not(.is-fullscreen) :not(.mod-stacked) div.workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container {
     padding-left: 80px !important;
 }
 body :not(.mod-stacked).workspace-tab-header-container {
@@ -117,9 +117,7 @@ div .metadata-properties-heading {
 div .metadata-add-button .text-icon-button {
     margin-top: 0em !important;
 }
-body .metadata-container {
-    /* margin-bottom: 0px !; */
-}
+
 body div .metadata-container {
     font-size: var(--font-smaller);
 }
