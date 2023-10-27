@@ -176,6 +176,10 @@ a.external-link[data-tooltip-position] {
   font-weight: normal !important;
   font-size: 100% !important;
 }
+.callout-title-inner > a.external-link[data-tooltip-position] {
+  color: var(--callout-title-color);
+  font-weight: var(--bold-weight) !important;
+}
 /* 取消普通外链默认图标 */
 .external-link {
   /* background-image: none; */
