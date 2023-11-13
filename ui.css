@@ -131,6 +131,6 @@ body h1 {
 body > div > div > div.cm-scroller.cm-vimMode > div.cm-sizer > div > div.cm-gutters {
     display: none !important;
 }
-body > div > div > div.cm-scroller > div.cm-sizer > div > div.cm-gutters > div.cm-gutter.cm-lineNumbers {
+body > div > div > div.cm-scroller > div.cm-sizer > div > div.cm-gutters {
     display: none !important;
 }
