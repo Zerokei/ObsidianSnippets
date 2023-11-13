@@ -124,3 +124,9 @@ body div .metadata-container {
 body h1 {
     margin-top: 24px !important;
 }
+
+/* Canvas 定制 */
+
+body > div > div > div.cm-scroller.cm-vimMode > div.cm-sizer > div > div.cm-gutters {
+    display: none !important;
+}
