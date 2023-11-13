@@ -127,6 +127,10 @@ body h1 {
 
 /* Canvas 定制 */
 
+/* remove canvas block line number */
 body > div > div > div.cm-scroller.cm-vimMode > div.cm-sizer > div > div.cm-gutters {
+    display: none !important;
+}
+body > div > div > div.cm-scroller > div.cm-sizer > div > div.cm-gutters > div.cm-gutter.cm-lineNumbers {
     display: none !important;
 }
