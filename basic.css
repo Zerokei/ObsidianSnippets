@@ -138,7 +138,7 @@ a.external-link {
 .cm-hmd-internal-link > span.is-unresolved > span.cm-underline,
 .markdown-rendered .internal-link.is-unresolved,
 .markdown-rendered .internal-link{
-  color: var(--color-base-100);
+  color: currentColor;
   text-decoration: none !important; 
   text-decoration-line: none !important;
 
