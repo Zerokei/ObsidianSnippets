@@ -87,6 +87,10 @@ ul, ol {
 .markdown-rendered ul {
   margin-block-start: 0em;
 }
+.cm-callout .markdown-rendered ul,
+.cm-callout .markdown-rendered ol {
+  padding-inline-start: 0em;
+}
 
 /* 列表图片左对齐，限制高度 */
 li img {
@@ -95,13 +99,6 @@ li img {
   /* width: 50%; */
 }
 
-/* 表格居中 */
-.markdown-preview-view table {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
 
 /*** 链接样式 ***/
 
