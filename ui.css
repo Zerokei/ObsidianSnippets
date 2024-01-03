@@ -134,3 +134,17 @@ body > div > div > div.cm-scroller.cm-vimMode > div.cm-sizer > div > div.cm-gutt
 body > div > div > div.cm-scroller > div.cm-sizer > div > div.cm-gutters {
     display: none !important;
 }
+
+
+/* 行号排版 */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
+    max-width: calc(var(--file-line-width) + 40px);
+}
+.markdown-source-view.mod-cm6 .cm-gutters {
+    margin-inline-end: 10px;
+    width: 30px;
+}
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
+    max-width: calc(var(--file-line-width) + 40px);
+    padding-left: 40px;
+}
