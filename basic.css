@@ -87,9 +87,16 @@ ul, ol {
 .markdown-rendered ul {
   margin-block-start: 0em;
 }
-.cm-callout .markdown-rendered ul,
-.cm-callout .markdown-rendered ol {
+
+/* checkbox 对齐问题 */
+ul.contains-task-list {
   padding-inline-start: 0em;
+}
+li.task-list-item-checkbox .list-bullet {
+  margin-inline-start: 0em;
+}
+ul > li.task-list-item .task-list-item-checkbox {
+  margin-inline-start: 1em; 
 }
 
 /* 列表图片左对齐，限制高度 */
