@@ -95,7 +95,7 @@ body .workspace-ribbon {
 
 /* 隐藏下方状态栏 */
 div.status-bar {
-    /* visibility:hidden; */
+    visibility:hidden;
 }
 
 /* 隐藏滚动条 */
