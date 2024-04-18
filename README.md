@@ -26,6 +26,8 @@ Open Obsidian > Settings > Appearance > CSS Snippets and enable it.
     - [LXGW Bright](https://github.com/lxgw/LxgwBright)
 - Monospace font
     - [Jetbrains mono](https://github.com/JetBrains/JetBrainsMono)
+- Kbd font
+    - [Courier Prime](https://fonts.google.com/specimen/Courier+Prime)
 
 ### Previous
 
