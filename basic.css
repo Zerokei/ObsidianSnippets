@@ -221,7 +221,7 @@ body {
 
 /* kdb 元素设置 */
 kbd {
-  font-family: 'Courier Prime', Courier, monospace;
+  font-family: 'Courier Prime', 'Noto Color Emoji', Courier, monospace;
   font-weight: 500;
   border-radius: 0.25rem;
   padding: 0.125rem 0.375rem;
@@ -230,4 +230,5 @@ kbd {
   color: var(--text-normal);
   background-color: var(--background-primary);
   white-space: nowrap;
+  vertical-align: top;
 }
