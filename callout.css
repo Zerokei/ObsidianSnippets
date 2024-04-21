@@ -104,3 +104,8 @@ body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-conta
 .callout-title-inner {
   flex-grow: 1;
 }
+
+/* 分割线 hr 设置 */
+.callout-content > hr {
+  margin: 1em;
+}
