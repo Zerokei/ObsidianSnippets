@@ -68,14 +68,6 @@ div.markdown-reading-view h1 span.custom-heading-count {
   margin-top: 5%;
 }
 
-/* 独立图片居中，限制高度 */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 400px;
-}
-
 /* 文本、列表混排适配 */
 /* 缩小段落与列表之间的间距 */
 p {
@@ -98,7 +90,16 @@ div.cm-callout div.callout-content ul.contains-task-list {
   padding-inline-start: 0em;
 }
 
+/* 独立图片居中，限制高度 */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 400px;
+}
+
 /* 列表图片左对齐，限制高度 */
+.HyperMD-list-line > .image-embed > img,
 li img {
   margin-left: 0%;
   max-height: 200px;
