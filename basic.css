@@ -68,6 +68,10 @@ div.markdown-reading-view h1 span.custom-heading-count {
   margin-top: 5%;
 }
 
+.markdown-rendered div:has( > :is(p,pre,table,ul,ol)) + div > :is(h1,h2,h3,h4,h5,h6) {
+  margin-top: 2%;
+}
+
 /* 文本、列表混排适配 */
 /* 缩小段落与列表之间的间距 */
 p {
