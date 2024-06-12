@@ -219,6 +219,22 @@ code {
   font-weight: var(--block-code-weight);
 }
 
+/* mark 高亮背景设置 */
+/*荧光笔高亮 by: Lemonadio*/
+/*写着写着就能用了,就不改代码了.*/
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight,
+:is(.markdown-preview-view,.markdown-rendered) mark {
+  display: inline;
+  box-sizing: border-box;
+  background-color: inherit;
+  background-image: linear-gradient(rgba(255,208,0,0.5),rgba(255,208,0,0.5));
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: 100% 53%;
+  border-radius: 1em;
+  padding: 0 0.2em;
+}
+
 /* tab 栏宽度设置 */
 body {
   --tab-stacked-pane-width: 100%;
