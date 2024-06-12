@@ -71,6 +71,7 @@ div.workspace-tab-header-tab-list > span.clickable-icon,
 div.sidebar-toggle-button.mod-right,
 div.view-actions > a.clickable-icon.view-action,
 div.view-header-nav-buttons > .clickable-icon,
+div.view-header > .view-actions, 
 div.workspace-tab-header-inner-close-button {
     display: none !important;
 }

@@ -16,6 +16,7 @@ div .markdown-rendered .show-indentation-guide {
 div.HyperMD-callout,
 .callout-title {
   font-size: 0.95rem;
+  font-weight: bold;
 }
 .callout-title-inner {
   margin-top: 0.4%;
