@@ -6,8 +6,9 @@
   --accent-l: 60%;
   /* 背景色 */
   --background-primary: #ffffff;
-  --background-secondary: #ffffff;
+  --background-secondary: #f8f8f8;
   --background-secondary-alt: #ffffff;
+  --border-color: #bbb;
   --text-normal: #000000;
 }
 
@@ -16,6 +17,8 @@
   --accent-h: 190;
   --accent-s: 95%;
   --accent-l: 60%;
+  --background-secondary: #212121;
+  --border-color: #bbb;
 }
 
 /* 全局变量设置 */
@@ -30,8 +33,9 @@ body {
   --list-indent: 2em; /* 列表缩进 */
   --list-spacing: 0.1em; /* 列表间距 */
   /* 字体设置 */
-  --font-text: 'LXGW Bright' 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
+  --font-text: 'Source Serif 4', 'STFangsong', 'LXGW Bright', 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
   --font-monospace: 'JetBrains Mono', 'LXGW WenKai Screen', '霞鹜文楷 屏幕阅读版';
+  --font-quote: 'Source Serif 4', 'STKaiti';
   /* Callout */
   --callout-title-padding: var(--size-4-2);
   --link-unresolved-filter: opacity(50%);
@@ -63,9 +67,21 @@ div.markdown-reading-view h1 span.custom-heading-count {
   padding-right: 0 !important;
 }
 
-/* 设置 h2 标题间距 */
-.markdown-preview-view h2 {
+/* 设置 headings 样式 */
+.markdown-rendered h1 {
+  /* H1 居中 */
+  text-align: center;
+}
+.markdown-rendered h2 {
+  /* H2 居右 */
   margin-top: 2.5rem;
+  text-align: right;
+}
+.markdown-rendered h2, .markdown-rendered h3 {
+  /* 标题下划线 */
+  letter-spacing: -0.75px;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1;
 }
 
 .markdown-rendered div:has( > :is(p,pre,table,ul,ol)) + div > :is(h3, h4) {
@@ -186,7 +202,6 @@ a.external-link[data-tooltip-position] {
 }
 .callout-title-inner > a.external-link[data-tooltip-position] {
   color: var(--callout-title-color);
-  font-weight: var(--bold-weight) !important;
   background-image: none;
   padding-left: 0;
 }
@@ -240,7 +255,57 @@ body {
   --tab-stacked-pane-width: 100%;
 }
 
-/* kdb 元素设置 */
+/* <blockquote> 样式设置 */
+.markdown-rendered blockquote {
+  display: flow-root;
+  margin: 1em 0;
+  padding: 0.75em 2.5em !important;
+  /* 取消左侧的高亮渲染 */
+  border-inline-start: none;
+}
+.markdown-rendered blockquote > p {
+  /* 显示规则 */
+  padding: 0;
+  border: none;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  margin: auto;
+  display: flow-root;
+  /* 字体样式 */
+  font-family: var(--font-quote);
+  font-size: 0.9rem;
+}
+
+blockquote > p::before {
+  content: "\201C";
+  left: -1em;
+  top: -0.56em;
+  font-size: 2.5em;
+  font-family: var(--font-quote);
+  display: block;
+  position: absolute;
+}
+blockquote > p::after {
+  content: "\201D";
+  right: -1em;
+  bottom: -1.12em;
+  font-size: 2.5em;
+  font-family: var(--font-quote);
+  display: block;
+  position: absolute;
+}
+
+/* <cite> 样式设置 */
+cite {
+  font-size: 80%;
+  font-family: var(--font-quote);
+  float: right;
+  font-style: normal;
+  display: block;
+}
+
+/* <kdb> 样式设置 */
 kbd {
   font-family: 'Courier Prime', Courier, monospace;
   font-weight: 500;

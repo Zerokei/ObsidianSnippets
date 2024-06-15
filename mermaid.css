@@ -18,9 +18,10 @@ div.mermaid svg {
   max-height: 100%;
   margin: 0 auto;
   display: block;
-  border-color: var(--color-base-70);
+  border-color: var(--border-color);
   border-width: 1px;
   border-style: solid;
+  border-radius: var(--radius-s);
 }
 div.mermaid::after {
   content:'';
