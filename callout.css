@@ -1,5 +1,4 @@
 /* Callout */
-div.HyperMD-quote,
 .callout {
   font-size: 0.9rem;
   font-family: var(--font-text);
@@ -25,11 +24,11 @@ body .callout[data-callout-metadata*=revert] {
   padding: 0px;
 }
 body .callout[data-callout-metadata*=revert] > .callout-content {
-  padding: 0 var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding);
+  padding: 0 8px 8px 8px;
 }
 body .callout[data-callout-metadata*=revert] > .callout-title {
   background-color: transparent !important;
-  padding: var(--callout-title-padding);
+  padding: 8px 8px 8px 8px;
   cursor: pointer;
 }
 body .callout[data-callout-metadata*=revert] > .callout-title .callout-title-inner {
@@ -42,7 +41,7 @@ body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-conta
   background-color: rgba(var(--ctp-mantle), 0.4);
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]) > .callout-content {
-  padding: var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding) calc(var(--callout-title-padding)*1.5);
+  padding: 8px 8px 8px 8px;
   /* border-top: 1px dashed rgba(var(--callout-color), 0.4); */
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]) > .callout-title .callout-fold {
@@ -61,33 +60,40 @@ body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-conta
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]).is-collapsible * > .callout-title > .callout-title-inner {
   flex-grow: var(--anp-callout-fold-position, unset);
 }
+
+
+/* NOTE callout 可折叠且已折叠 */
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]).is-collapsible.is-collapsed {
   padding: 0;
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]).is-collapsible.is-collapsed > .callout-title {
   background-color: rgba(var(--callout-color), 0.1);
-  padding: var(--callout-title-padding);
+  padding: 8px 8px 8px 8px;
   cursor: pointer;
 }
+
+/* NOTE callout 可折叠但未折叠 */
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]).is-collapsible:not(.is-collapsed) {
-  padding: 0px 0px var(--callout-title-padding) 0px;
+  padding: 0px 0px 4px 0px;
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]).is-collapsible:not(.is-collapsed) > .callout-title {
   background-color: rgba(var(--callout-color), 0.1);
-  padding: var(--callout-title-padding);
+  padding: 8px 8px 0px 8px;
   border-color: rgba(var(--callout-color), 0.4);
   cursor: pointer;
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]).is-collapsible:not(.is-collapsed) > .callout-content {
-  padding: var(--callout-title-padding) var(--callout-title-padding) 0 calc(var(--callout-title-padding)*1.5);
+  padding: 8px 8px 8px 8px;
   /* border-top: 1px dashed rgba(var(--callout-color), 0.4); */
 }
+
+/* NOTE callout 不可折叠 */
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]):not(.is-collapsible) {
-  padding: 0px;
+  padding: 0;
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]):not(.is-collapsible) > .callout-title {
   background-color: rgba(var(--callout-color), 0.1);
-  padding: var(--callout-title-padding);
+  padding: 8px 8px 0px 8px;
   border-color: rgba(var(--callout-color), 0.4);
 }
 body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-container], [data-callout=multi-column]) .list-collapse-indicator {
@@ -117,16 +123,18 @@ div[data-callout=cite], div[data-callout=quote], div[data-callout=bible] {
 }
 
 /* callout title 修饰 */
-div.callout > .callout-title {
+.HyperMD-callout, div.callout > .callout-title {
   background-color: inherit !important;
   text-align: right;
+  font-family: var(--font-accent);
 }
 
 /* callout abstract 样式定制 */
 div[data-callout=abstract] > .callout-title {
   display: none;
 }
-div[data-callout=abstract] {
+div[data-callout=abstract], .callout[data-callout=abstract] {
+  font-family: var(--font-accent) !important;
   background-color: var(--background-secondary) !important;
   border-color: var(--border-color) !important;
   border-radius: 0 !important;
