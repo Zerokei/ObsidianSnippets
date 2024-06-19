@@ -94,8 +94,6 @@ div.markdown-reading-view h1 span.custom-heading-count {
   font-family: var(--font-accent) !important;
 }
 .markdown-rendered h4, .HyperMD-header-4 {
-  /* 居中 */
-  text-align: center;
   /* 字体 */
   font-family: var(--font-accent) !important;
 }
