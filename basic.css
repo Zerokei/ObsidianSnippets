@@ -68,23 +68,36 @@ div.markdown-reading-view h1 span.custom-heading-count {
 }
 
 /* 设置 headings 样式 */
-h1, h2, h3, h4 {
+.markdown-rendered h1, .HyperMD-header-1{
+  /* 居中 */
+  text-align: center;
+  /* 字体 */
   font-family: var(--font-accent) !important;
 }
-.markdown-rendered h1 {
-  /* H1 居中 */
-  text-align: center;
-}
-.markdown-rendered h2 {
-  /* H2 居右 */
+.markdown-rendered h2, .HyperMD-header-2 {
   margin-top: 2.5rem;
+  /* 居右 */
   text-align: right;
-}
-.markdown-rendered h2, .markdown-rendered h3 {
   /* 标题下划线 */
   letter-spacing: -0.75px;
   border-bottom: 1px solid var(--border-color);
   line-height: 1;
+  /* 字体设置 */
+  font-family: var(--font-accent) !important;
+}
+.markdown-rendered h3, .HyperMD-header-3 {
+  /* 标题下划线 */
+  letter-spacing: -0.75px;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1;
+  /* 字体设置 */
+  font-family: var(--font-accent) !important;
+}
+.markdown-rendered h4, .HyperMD-header-4 {
+  /* 居中 */
+  text-align: center;
+  /* 字体 */
+  font-family: var(--font-accent) !important;
 }
 
 .markdown-rendered div:has( > :is(p,pre,table,ul,ol)) + div > :is(h3, h4) {
