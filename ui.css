@@ -65,7 +65,7 @@ body div.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
     background-color: var(--color-base-20) !important;
 }
 
-/* 隐藏顶栏按钮和叉号 */
+/* 隐藏顶栏按钮、叉号等标签 */
 div.sidebar-toggle-button.mod-left > div.clickable-icon,
 div.workspace-tab-header-tab-list > span.clickable-icon,
 div.sidebar-toggle-button.mod-right,
@@ -75,6 +75,10 @@ div.view-header > .view-actions,
 div.workspace-tab-header-inner-close-button {
     display: none !important;
 }
+body.is-fullscreen .workspace-tab-header-new-tab {
+    display: none !important;
+}
+
 
 
 /* 隐藏侧边窗 */
