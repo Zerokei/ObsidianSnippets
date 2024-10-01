@@ -37,3 +37,4 @@ Open Obsidian > Settings > Appearance > CSS Snippets and enable it.
 ## Credits
 
 - [Obsidian-Serenity](https://github.com/Bluemoondragon07/Obsidian-Serenity)
+- [Gwern.net](https://gwern.net/about)
