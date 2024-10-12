@@ -49,6 +49,7 @@ body {
   --block-code-weight: 300;
 
   --external-link-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke-width='2' stroke-linecap='round' stroke='grey' %3E%3Cpath d='M18.668 13.332l-5.336 5.336' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath d='M21.332 17.332L24 14.668A4.718 4.718 0 0 0 24 8a4.718 4.718 0 0 0-6.668 0l-2.664 2.668m-4 4L8 17.332A4.718 4.718 0 0 0 8 24a4.718 4.718 0 0 0 6.668 0l2.664-2.668' stroke-width='2.66666'/%3E%3C/g%3E%3C/svg%3E");
+  --dblp-link-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' id='dblp'%3E%3Cpath fill='%232E7FCA' d='m11.969 7.81-.616-2.28.616 2.28zM5.754 10.365a.733.733 0 0 1-.333-.441l-.607-2.279-1.916.898a.734.734 0 0 0-.398.853l2.44 9.151a.734.734 0 0 0 1.019.476l6.073-2.833-.67-2.48-5.608-3.345zm5.599-4.835-.151-.558a.737.737 0 0 0-.331-.438L3.386.049a.336.336 0 0 0-.497.374l1.925 7.221 5.519-2.588a.736.736 0 0 1 1.02.474z'%3E%3C/path%3E%3Cpath fill='%230A4DA5' d='m5.754 10.365 5.606 3.345-1.187-4.392a.734.734 0 0 1 .398-.856l1.397-.652-.615-2.28a.734.734 0 0 0-1.019-.473l-5.52 2.588.608 2.279a.734.734 0 0 0 .332.441z'%3E%3C/path%3E%3Cpath fill='%232E7FCA' d='m12.031 16.19.616 2.28-.616-2.28z'%3E%3C/path%3E%3Cpath fill='%23FDD700' d='m21.5 14.604-2.44-9.151a.734.734 0 0 0-1.019-.476L11.969 7.81l.67 2.48 5.606 3.345a.733.733 0 0 1 .333.441l.608 2.279 1.917-.899a.733.733 0 0 0 .397-.852z'%3E%3C/path%3E%3Cpath fill='%232E7FCA' d='m11.361 13.71.67 2.48zM12.639 10.29l-.67-2.48z'%3E%3C/path%3E%3Cpath fill='%2345681B' d='m11.569 9.652 1.07.638-.67-2.48-1.397.652a.734.734 0 0 0-.398.856l1.187 4.392-.875-3.237a.733.733 0 0 1 1.083-.821z'%3E%3C/path%3E%3Cpath fill='%23FDD700' d='m12.647 18.47.151.558c.05.183.168.34.331.438l7.485 4.485a.336.336 0 0 0 .497-.375l-1.925-7.221-5.519 2.588a.735.735 0 0 1-1.02-.473z'%3E%3C/path%3E%3Cpath fill='%23F9BC00' d='M18.246 13.635 12.64 10.29l1.187 4.392a.734.734 0 0 1-.398.856l-1.397.652.616 2.281a.734.734 0 0 0 1.019.473l5.519-2.588-.608-2.279a.733.733 0 0 0-.332-.442z'%3E%3C/path%3E%3Cpath fill='%235A7F19' d='M13.514 13.527a.734.734 0 0 1-1.084.821l-1.07-.638.67 2.48 1.397-.652a.734.734 0 0 0 .398-.856l-1.187-4.392.876 3.237z'%3E%3C/path%3E%3Cpath fill='%232B5A20' d='m13.514 13.527-.875-3.237-1.07-.638a.734.734 0 0 0-1.084.821l.875 3.237 1.07.638a.733.733 0 0 0 1.084-.821z'%3E%3C/path%3E%3C/svg%3E");
   --external-link-icon-position: center left;
   --external-link-icon-position-y: 0.06em;
   --external-link-icon-size: 1.1em;
@@ -169,6 +170,20 @@ a.external-link {
   background-image: var(--external-link-icon);
 }
 
+/* DBLP 链接设置 */
+/* HACK 只设置了 Reading Mode */
+a.external-link[href^="https://dblp.org"] {
+  margin-left: 0.3em; /* NOTE 设置间距 */
+  overflow: hidden;
+  padding-left: var(--external-link-padding-right);
+  background-repeat: no-repeat;
+  background-position: var(--external-link-icon-position);
+  background-position-y: var(--external-link-icon-position-y);
+  background-size: var(--external-link-icon-size);
+  background-image: var(--dblp-link-icon);
+}
+
+
 /* 内链样式设置 */
 span.cm-hmd-internal-link > a,
 a.internal-link {
@@ -231,8 +246,8 @@ a.external-link {
 a.external-link[data-tooltip-position] {
   color: var(--color-base-100);
   font-family: var(--font-text);
-  font-weight: normal !important;
-  font-size: 100% !important;
+  font-weight: normal;
+  font-size: 100%;
 }
 .callout-title-inner > a.external-link[data-tooltip-position] {
   color: var(--callout-title-color);
