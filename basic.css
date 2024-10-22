@@ -214,7 +214,7 @@ a.internal-link::before {
   position: absolute;
   inset: 0 0 0 0;
   width: 1px;
-  height: 100%;
+  height: 1.2em;
 
   background-image: linear-gradient(var(--background-primary), var(--background-primary)),
                     linear-gradient(var(--background-primary), var(--background-primary)),
