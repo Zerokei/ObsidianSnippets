@@ -143,6 +143,7 @@ li img {
 /*** 链接样式 ***/
 
 span.cm-link:hover,
+span.cm-url:hover,
 span.cm-hmd-internal-link:hover,
 a:hover{
   color: var(--link-color-hover) !important;
@@ -151,6 +152,7 @@ a:hover{
 }
 
 span.cm-link,
+span.cm-url,
 span.cm-hmd-internal-link,
 a {
   color: var(--link-color) !important;
@@ -158,16 +160,43 @@ a {
   text-decoration-line: none !important;
 }
 
-/* 外链样式设置 */
-span.cm-link > a,
-a.external-link {
+/* 特殊外链-纯链接(http, https 样式设置) */
+span.cm-url > a,
+a.external-link:not([aria-label]) {
   /* 自动图标设置 */
+  font-family: var(--font-monospace);
+  font-weight: 200;
+  font-size: 80%;
   padding-left: var(--external-link-padding-right);
   background-repeat: no-repeat;
   background-position: var(--external-link-icon-position);
   background-position-y: var(--external-link-icon-position-y);
   background-size: var(--external-link-icon-size);
   background-image: var(--external-link-icon);
+}
+
+/* []() 外链样式设置 */
+span.cm-link > a,
+a.external-link[aria-label] {
+  color: var(--color-base-100);
+  font-family: var(--font-text);
+  font-weight: normal;
+  font-size: 100%;
+  text-shadow: 
+              0      0.01em var(--background-primary),
+              0.05em 0.01em var(--background-primary),
+             -0.05em 0.01em var(--background-primary),
+              0.10em 0.01em var(--background-primary),
+             -0.10em 0.01em var(--background-primary),
+              0.15em 0.01em var(--background-primary),
+             -0.15em 0.01em var(--background-primary),
+              0.20em 0.01em var(--background-primary),
+             -0.20em 0.01em var(--background-primary);
+
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% calc(100% - 0.1em);
 }
 
 /* DBLP 链接设置 */
@@ -233,24 +262,9 @@ a.internal-link::before {
   background-image: var(--internal-link-icon);
 }
 
-/* 特殊外链-纯链接(http, https 样式设置) */
-span.cm-url,
-a.external-link {
-  text-decoration: none !important; 
-  text-decoration-line: none !important;
-  font-family: var(--font-monospace);
-  font-weight: 300 !important;
-  font-size: 80% !important;
-}
-/* 修复普通外链样式 */
-a.external-link[data-tooltip-position] {
-  color: var(--color-base-100);
-  font-family: var(--font-text);
-  font-weight: normal;
-  font-size: 100%;
-}
-.callout-title-inner > a.external-link[data-tooltip-position] {
-  color: var(--callout-title-color);
+/* NOTE 链接在 Callout 里的样式修正 */
+.callout-title-inner > a.external-link[aria-label] {
+  color: var(--callout-title-color) !important;
   background-image: none;
   padding-left: 0;
 }
