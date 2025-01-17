@@ -14,6 +14,7 @@ Apply to the default obsidian theme.
 @import url("https://zerokei.github.io/ObsidianSnippets/yaml.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/digital-garden.css");
 @import url("https://zerokei.github.io/ObsidianSnippets/ui.css");
+@import url("https://zerokei.github.io/ObsidianSnippets/sidenote.css");
 ```
 
 Open Obsidian > Settings > Appearance > CSS Snippets and enable it.
@@ -38,3 +39,4 @@ Open Obsidian > Settings > Appearance > CSS Snippets and enable it.
 
 - [Obsidian-Serenity](https://github.com/Bluemoondragon07/Obsidian-Serenity)
 - [Gwern.net](https://gwern.net/about)
+- [Obsidian-sidenote-auto-adjust-module](https://github.com/crnkv/obsidian-sidenote-auto-adjust-module/tree/master)
