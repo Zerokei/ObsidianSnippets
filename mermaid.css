@@ -34,3 +34,8 @@ div.mermaid::after {
   right:0;
   bottom:0;
 }
+
+rect {
+  fill: var(--background-secondary) !important;
+  stroke: var(--border-color) !important;
+}
