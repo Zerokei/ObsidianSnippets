@@ -54,6 +54,8 @@ body {
   --external-link-icon-position-y: 0.06em;
   --external-link-icon-size: 1.1em;
   --external-link-padding-right: 1.25em;
+
+  --blockquote-border-thickness: 0px;
 }
 
 /* 圆角设置 */
@@ -319,7 +321,9 @@ body {
 }
 
 /* <blockquote> 样式设置 */
-.markdown-rendered blockquote {
+div.el-blockquote > blockquote, /*for Obsidian*/
+blockquote:not(.callout)       /*for Quartz*/
+ {
   display: flow-root;
   margin: 1em 0;
   padding: 0.75em 2.5em !important;
@@ -332,7 +336,7 @@ body {
   font-family: var(--font-text);
 }
 
-.markdown-rendered blockquote > p {
+blockquote > p {
   /* 显示规则 */
   padding: 0;
   border: none;
@@ -341,6 +345,7 @@ body {
   width: fit-content;
   margin: auto;
   display: flow-root;
+  line-height: 1.5;
   /* 字体样式 */
   font-family: var(--font-quote);
   font-size: 0.9rem;

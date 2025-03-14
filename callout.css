@@ -130,7 +130,9 @@ div[data-callout=cite], div[data-callout=quote], div[data-callout=bible] {
 }
 
 /* callout abstract 样式定制 */
-div[data-callout=abstract] > .callout-title {
+div[data-callout=abstract] > .callout-title,        /*for Obsidian*/
+blockquote[data-callout=abstract] > .callout-title  /*for Quartz*/
+{
   display: none;
 }
 div[data-callout=abstract], .callout[data-callout=abstract] {
