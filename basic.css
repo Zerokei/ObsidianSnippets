@@ -103,23 +103,6 @@ div.markdown-reading-view h1 span.custom-heading-count {
   margin-top: 1rem;
 }
 
-/* 文本、列表混排适配 */
-/* 缩小段落与列表之间的间距 */
-p {
-  margin-block-end: 0em;
-}
-ul, ol {
-  margin-block-start: 0em;
-}
-/* 缩小 callout 块中的间距 */
-.markdown-rendered p{
-  margin-block-end: 0em;
-}
-.markdown-rendered ol, 
-.markdown-rendered ul {
-  margin-block-start: 0em;
-}
-
 /* callout checkbox 对齐问题 */
 div.cm-callout div.callout-content ul.contains-task-list {
   padding-inline-start: 0em;
