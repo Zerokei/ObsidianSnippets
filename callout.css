@@ -18,9 +18,7 @@ div.HyperMD-callout,
   font-size: 0.95rem;
   font-weight: 500;
 }
-.callout-title-inner {
-  margin-top: 0.4%;
-}
+
 body .callout[data-callout-metadata*=revert] {
   padding: 0px;
 }
