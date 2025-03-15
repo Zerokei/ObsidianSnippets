@@ -1,5 +1,7 @@
 
-.theme-light {
+.theme-light,
+[saved-theme=light]  /* for Quartz */
+{
   /* 强调色 */
   --accent-h: 31;
   --accent-s: 95%;
@@ -15,7 +17,9 @@
   --text-normal: #000000;
 }
 
-.theme-dark {
+.theme-dark,
+[saved-theme=dark]  /* for Quartz */
+{
   /* 强调色 */
   --accent-h: 190;
   --accent-s: 95%;
@@ -56,6 +60,7 @@ body {
   --external-link-padding-right: 1.25em;
 
   --blockquote-border-thickness: 0px;
+  --callout-radius: 4px;
 }
 
 /* 圆角设置 */
@@ -131,7 +136,9 @@ a {
 
 /* 特殊外链-纯链接(http, https 样式设置) */
 span.cm-url > a,
-a.external-link:not([aria-label]) {
+a.external-link:not([aria-label]),
+a.external:not([aria-label])  /*for Quartz*/
+{  
   /* 自动图标设置 */
   font-family: var(--font-monospace);
   font-weight: 200;

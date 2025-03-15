@@ -2,6 +2,7 @@
 .callout {
   font-size: 0.9rem;
   font-family: var(--font-text);
+  border: 1px solid;
 }
 .callout-icon svg {
   width: 105%;
@@ -118,20 +119,20 @@ body .callout:not([data-callout-metadata*=revert]):not([data-callout=blank-conta
 }
 
 /* 设置引用类 callout 的字体 */
-div[data-callout=cite], div[data-callout=quote], div[data-callout=bible] {
+[data-callout=cite], [data-callout=quote], [data-callout=bible] {
   font-family: var(--font-quote);
 }
 
 /* callout title 修饰 */
-.HyperMD-callout, div.callout > .callout-title {
+.HyperMD-callout, 
+.callout > .callout-title {
   background-color: inherit !important;
   text-align: right;
   font-family: var(--font-accent);
 }
 
 /* callout abstract 样式定制 */
-div[data-callout=abstract] > .callout-title,        /*for Obsidian*/
-blockquote[data-callout=abstract] > .callout-title  /*for Quartz*/
+[data-callout=abstract] > .callout-title
 {
   display: none;
 }
