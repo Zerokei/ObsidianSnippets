@@ -108,14 +108,6 @@ div.cm-callout div.callout-content ul.contains-task-list {
   padding-inline-start: 0em;
 }
 
-/* 列表图片左对齐，限制高度 */
-.HyperMD-list-line > .image-embed > img,
-li img {
-  margin-left: 0%;
-  max-height: 200px;
-  /* width: 50%; */
-}
-
 
 /*** 链接样式 ***/
 
